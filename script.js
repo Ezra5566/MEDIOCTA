@@ -82,7 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function animateMasks() {
-        const masks = document.querySelectorAll(".hero-img.mask");
+        const masks = document.querySelectorAll(".mediocta-img.mask");
+        console.log('masks', masks);
         const clipPathValues = [
             "polygon(10% 0, 0 0, 0 100%, 10% 100%)",
             "polygon(20% 0, 10% 0, 10% 100%, 20% 100%)",
@@ -93,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "polygon(70% 0, 60% 0, 60% 100%, 70% 100%)",
             "polygon(80% 0, 70% 0, 70% 100%, 80% 100%)",
             "polygon(90% 0, 80% 0, 80% 100%, 90% 100%)",
-            "polygon(100% 0, 90% 0, 90% 100%, 100% 100%)",
+            "polygon(100% 0, 90% 0, 90% 100%, 100% 100%)"
         ];
 
         setTimeout(() => {
