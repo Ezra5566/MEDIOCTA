@@ -35,7 +35,7 @@ body {
 }
 
 p {
-    font-size: 17px;
+    font-size: 11px;
     line-height: 1;
     color: var(--color-text);
 }
@@ -74,6 +74,13 @@ button {
     overflow: hidden;
     transition: 0.3s;
     z-index: 100;
+}
+
+#bottom-button {
+    position: relative;
+    top: -15%;
+    left: 5%;
+ 
 }
 
 button span {
@@ -153,12 +160,16 @@ footer > div {
     margin-bottom: 2em;
 }
 
-.hero-img {
+.mediocta-img {
     position: absolute;
     right: 4em;
     bottom: 35%;
     width: 600px;
     height: 200px;
+    background-image: url(./medioctatest.jpg);
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .mask {
@@ -170,12 +181,6 @@ footer > div {
     z-index: 9999;
 }
 
-/*.mask:nth-child(1) { top: 0; left: 0; }
-.mask:nth-child(2) { top: 0; left: 20%; }
-.mask:nth-child(3) { top: 0; left: 40%; }
-.mask:nth-child(4) { top: 0; left: 60%; }
-.mask:nth-child(5) { top: 0; left: 80%; }
-*/
 
 .loader {
     position: fixed;
@@ -228,9 +233,24 @@ footer > div {
     clip-path: polygon(90% 0, 90% 0, 90% 100%, 90% 100%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
+    /* Adjust styles for smaller screens */
     .logo h1 {
+        position: relative;
         font-size: 24px;
+        left: -10%;
+
+    }
+    .mediocta-img {
+        position: relative; /* Change to relative for smaller screens */
+        right: auto; /* Reset right positioning */
+        left: 50%; /* Center the image */
+        transform: translateX(-50%); /* Adjust to center */
+        width: 90%; /* Make it responsive */
+        max-width: 1023px; /* Keep a max width */
+        height: auto; /* Allow height to adjust based on width */
+        aspect-ratio: 4 / 2; /* Maintain aspect ratio */
+        bottom: -10%; /* Adjust bottom positioning as needed */
     }
 
     .sub-nav {
@@ -243,7 +263,10 @@ footer > div {
     }
 
     .slide-name p {
+        position: relative;
         font-size: 24px;
+        left: 5%;
+        padding: 0.5em 0 1.5em 0;
     }
 
     .awards,.agency {
