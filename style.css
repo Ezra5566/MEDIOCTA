@@ -238,7 +238,7 @@ footer > div {
     .logo h1 {
         position: relative;
         font-size: 24px;
-        left: -10%;
+        left: -25%;
 
     }
     .mediocta-img {
@@ -261,12 +261,19 @@ footer > div {
     p.intro {
         display: none;
     }
-
-    .slide-name p {
+    .slide-index p {
         position: relative;
         font-size: 24px;
         left: 5%;
         padding: 0.5em 0 1.5em 0;
+    }
+
+    .slide-name p {
+        position: relative;
+        font-size: 25px;
+        left: 5%;
+        bottom: -20%;
+        /*padding: 0.5em 0 1.5em 0;*/
     }
 
     .awards,.agency {
